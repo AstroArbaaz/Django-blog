@@ -29,7 +29,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', '@!fa5ju)#h(%@aaq709dp51t&u3vz3
 
 DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
-ALLOWED_HOSTS = ['https://django-blog-web-app.herokuapp.com/']
+ALLOWED_HOSTS = ['django-blog-web-app.herokuapp.com/']
 
 
 # Application definition

@@ -1,2 +1,2 @@
 # Django-blog
-a python blog web app
+a blog web app

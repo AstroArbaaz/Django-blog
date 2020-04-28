@@ -9,7 +9,7 @@ def home(request):
     context = {
         'posts': Post.objects.all()
     }
-    return render(request, 'blog/home.html', context)
+    return render(request, 'Blog/home.html', context)
 
 class PostlistView(ListView):
     model = Post
@@ -64,4 +64,4 @@ class PostDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
         return False
 
 def about(request):
-    return render(request, 'blog/about.html', {'title': 'About'})
+    return render(request, 'Blog/about.html', {'title': 'About'})

@@ -82,7 +82,7 @@ TEMPLATES = [
 ]
 
 TEMPLATE_DIRS = (
-    os.path.join(SETTINGS_PATH, 'templates'),
+    os.path.join(SETTINGS_PATH, 'templates\blog'),
 )
 
 WSGI_APPLICATION = 'DjangoProject.wsgi.application'

@@ -9,18 +9,18 @@ def home(request):
     context = {
         'posts': Post.objects.all()
     }
-    return render(request, 'blog/home.html', context)
+    return render(request, 'Blog/home.html', context)
 
 class PostlistView(ListView):
     model = Post
-    template_name = 'blog/home.html'
+    template_name = 'Blog/home.html'
     context_object_name = 'posts'
     ordering = ['-date'] # it reverses the post order by dates
     paginate_by = 2
 
 class UserPostlistView(ListView):
     model = Post
-    template_name = 'blog/user_post.html'
+    template_name = 'Blog/user_post.html'
     context_object_name = 'posts'
     paginate_by = 2
 
@@ -64,4 +64,4 @@ class PostDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
         return False
 
 def about(request):
-    return render(request, 'blog/about.html', {'title': 'About'})
+    return render(request, 'Blog/about.html', {'title': 'About'})

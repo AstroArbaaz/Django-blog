@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', '@!fa5ju)#h(%@aaq709dp51t&u3vz3
 #DEBUG = True
 
 
-DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
+DEBUG = os.environ.get('DJANGO_DEBUG', '') = 'False'
 
 ALLOWED_HOSTS = ['django-blog-web-app.herokuapp.com', 'localhost', '127.0.0.1']
 
